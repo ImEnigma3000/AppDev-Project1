@@ -1,13 +1,13 @@
 extends Control
 
-@onready var choice_list : ItemList = $Center/RoundEdges/RootRow/PaddingLeftPanel/LeftPanel/ChoicesList
+@onready var choice_list : ItemList = $RootRow/PaddingLeftPanel/LeftPanel/ChoicesList
 @onready var add_popup: ConfirmationDialog = $AddChoicePopUp
-@onready var remove_button: Button = $Center/RoundEdges/RootRow/PaddingRightPanel/RightPanel/RemoveButton
-@onready var decide_button: Button = $Center/RoundEdges/RootRow/PaddingRightPanel/RightPanel/DecideButton
+@onready var remove_button: Button = $RootRow/PaddingRightPanel/RightPanel/RemoveButton
+@onready var decide_button: Button = $RootRow/PaddingRightPanel/RightPanel/DecideButton
 @onready var result_popup: AcceptDialog =$ResultPopUp
 
 func _ready() -> void:
-	$Center/RoundEdges/RootRow/PaddingRightPanel/RightPanel/AddButton.pressed.connect(_on_add_pressed)
+	$RootRow/PaddingRightPanel/RightPanel/AddButton.pressed.connect(_on_add_pressed)
 	add_popup.submitted.connect(_on_choice_submitted)
 	remove_button.pressed.connect(_on_remove)
 	decide_button.pressed.connect(_on_decide)
