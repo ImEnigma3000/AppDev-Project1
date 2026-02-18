@@ -10,10 +10,13 @@ config_version=5
 
 [application]
 
-config/name="AppDev project 1"
-run/main_scene="uid://st4nkc4yrbj"
+config/name="IndecisiveAPP"
+run/main_scene="uid://or7wm76ksuql"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [physics]
 
